@@ -5,8 +5,8 @@ import { router } from './router.js'
 
 dotenv.config()
 
-const host = process.env.HOST ?? 'localhost'
-const port = process.env.PORT ? parseInt(process.env.PORT) : 3000
+const host = '0.0.0.0'
+const port = process.env.PORT || 3000
 
 const app = express()
 
